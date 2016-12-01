@@ -2,13 +2,9 @@ describe("Board", function(){
   var Board = require('../lib/Board.js');
   var Player = require('../lib/Player.js');
   var board;
-  var playerX;
-  var playerO;
 
   beforeEach(function() {
-    playerX = new Player("Test1");
-    playerY = new Player("Test2");
-    board = new Board(playerX, playerO);
+    board = new Board();
   });
 
   it('can play an X', function(){
